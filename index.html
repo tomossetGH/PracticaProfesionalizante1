@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicacion</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+    <header class="container-fluid bg-info d-flex justify-content-around">
+        <p class="text-light mt-1 ms-2 fs-6">HACE TU PEDIDO SIEMPRE CON NOSOTROS</p>            
+
+        <div class="text-light mt-2 me-2 fs-6">
+            <i class="bi bi-facebook"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-whatsapp"></i>
+            <i class="bi bi-tiktok"></i>
+        </div>      
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-info-subtle">
+        
+        <div class="container-xxl">
+
+           <div class="container-l mx-auto me-2">
+            <a href="inicioDeSesion.html"><input type="button" class="btn btn-primary" value="Inciar Sesion"></a>
+           </div>
+           <div class="container-l mx-auto">
+            <a href="registro.html"><input type="button" class="btn btn-primary" value="Registrarse"></a>
+           </div>
+
+
+           <div class="collapse navbar-collapse" id="menu">
+             <ul class="navbar-nav ms-auto">
+                 <li class="nav-item">
+                     <a class="nav-link fs-5" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Elegir semana</a>
+                 </li>
+
+                 <li class="nav-item">
+                     <a href="#" class="nav-link fs-5">Contactanos</a>
+                 </li>
+                 <li class="nav-item">
+                    <a href="#" class="nav-link fs-5">Configuraciones</a>
+                 </li>
+             </ul>
+           </div>
+        </div>
+
+
+    </nav>
+
+    <section>
+        <div id="menuCanvas" class="offcanvas offcanvas-start  bg-light">
+            <!-- <div id="menu" class="offcanvas offcanvas-end bg-primary text-white"> -->
+            <!-- <div id="menu" class="offcanvas offcanvas-top bg-primary text-white"> -->
+            <!-- <div id="menu" class="offcanvas offcanvas-bottom bg-primary text-white"> -->
+                
+            <!-- Cabecera -->
+            <div class="offcanvas-header">
+                <h2 class="offcanvas-title">Elegir semana</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!-- Cuerpo -->
+            <div class="offcanvas-body">
+                <ul class="nav flex-column">
+                    <li class="nav-item">
+                        <a href="#" class="boton--semana nav-link btn-outline-secondary text-dark" data-bs-dismiss="offcanvas" data-semana="semana-1">Semana 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="boton--semana nav-link btn-outline-secondary text-dark" data-bs-dismiss="offcanvas" data-semana="semana-2">Semana 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="boton--semana nav-link btn-outline-secondary text-dark" data-bs-dismiss="offcanvas" data-semana="semana-3">Semana 3</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="boton--semana nav-link btn-outline-secondary text-dark" data-bs-dismiss="offcanvas" data-semana="semana-4">Semana 4</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="bg-secondary-subtle">
+
+        <section class="container-xl mt-3">
+            <div class="d-flex flex-row">        
+                <div>            
+                    <span class="fs-3 me-auto text-uppercase m-2">Comidas diarias</span>
+                </div>
+                <div class="w-75">               
+                    <hr class="p-1 m-3 border-1">                       
+                </div>
+            </div>                
+        </section>
+
+        <section class="container-xl mt-0">
+            <div class="d-flex flex-row">        
+                <div>            
+                    <span class="fs-3 me-auto m-2">Empanadas🥟</span>
+                </div>
+            </div>                
+        </section>
+    
+    
+        
+        
+        
+    
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/empanadas-pollo-jugosas.jpg" alt="">
+                    <h1 class="card-title">Empanda de pollo</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4  card">
+                    <img class="card-img mx-auto" src="img/Empanadas-de-jamon-y-queso.jpg" alt="">
+                    <h1 class="card-title">Empanda de jamon y queso</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/empanada.jpeg" alt="">
+                    <h1 class="card-title">Empanda de carne</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/Screenshot_9.png" alt="">
+                    <h1 class="card-title">Empanda de cebolla y queso</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/empanada-verdura.jpeg" alt="">
+                    <h1 class="card-title">Empanda de verdura</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/empanada-choclo.jpeg" alt="">
+                    <h1 class="card-title">Empanda de choclo</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+            
+            </div>
+    
+        </div>
+
+        <section class="container-xl mt-2">
+            <div class="d-flex flex-row">        
+                <div>            
+                    <span class="fs-3 me-auto m-2">Tartas🍕</span>
+                </div>
+            </div>                
+        </section>
+
+
+
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/Tarta-veggie-de-calabaza-y-queso.webp" alt="">
+                    <h1 class="card-title">Tarta de Calabaza</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4  card">
+                    <img class="card-img mx-auto" src="img/tarta-verdura.jpeg" alt="">
+                    <h1 class="card-title">Tarta de Verdura</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/tarta-jyq.jpeg" alt="">
+                    <h1 class="card-title">Tarta de Jamon y Queso</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                
+            
+            </div>
+    
+        </div>
+        
+
+        <section class="container-xl mt-2">
+            <div class="d-flex flex-row">        
+                <div>            
+                    <span class="fs-3 me-auto m-2">Ensaladas🥗</span>
+                </div>
+            </div>                
+        </section>
+
+
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/ensalada cruda.jpeg" alt="">
+                    <h1 class="card-title">Ensalada cruda</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4  card">
+                    <img class="card-img mx-auto" src="img/ensalada-cocida.jpeg" alt="">
+                    <h1 class="card-title">Ensalada cocida</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                
+            
+            </div>
+    
+        </div>
+
+
+
+
+
+        <section class="semana container-xl" id="semana-1" style="display: none;">
+
+            <section class="container-xl mt-2">
+                <div class="d-flex flex-row">        
+                    <div>            
+                        <span class="fs-3 me-auto m-2">Menu Especial</span>
+                    </div>
+                    <div class="w-75">               
+                        <hr class="p-1 m-3 border-1">                       
+                    </div>
+                </div>                
+            </section>
+
+
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/pollo.jpeg" alt="">
+                    <h1 class="card-title">Pata muslo/Carne/Cerdo</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/medallones.jfif" alt="">
+                    <h1 class="card-title">Medallones de Pollo</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="semana container-xl" id="semana-2" style="display: none;">
+
+            <section class="container-xl mt-2">
+                <div class="d-flex flex-row">        
+                    <div>            
+                        <span class="fs-3 me-auto m-2">Menu Especial</span>
+                    </div>
+                    <div class="w-75">               
+                        <hr class="p-1 m-3 border-1">                       
+                    </div>
+                </div>                
+            </section>
+
+
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/pastel-carne.jfif" alt="">
+                    <h1 class="card-title">Pastel de Carne y Papa</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/pollo relleno.jfif" alt="">
+                    <h1 class="card-title">Pollo Relleno y Papas</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/medallones-semana2.jfif" alt="">
+                    <h1 class="card-title">Fideos o Ravioles con Medallones</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+        <section class="semana container-xl" id="semana-3" style="display: none;">
+
+            <section class="container-xl mt-2">
+                <div class="d-flex flex-row">        
+                    <div>            
+                        <span class="fs-3 me-auto m-2">Menu Especial</span>
+                    </div>
+                    <div class="w-75">               
+                        <hr class="p-1 m-3 border-1">                       
+                    </div>
+                </div>                
+            </section>
+
+
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/sandwich.jfif" alt="">
+                    <h1 class="card-title">Sandwich de Pollo o Milanesa c/Lechuga-Tomate</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/lasagna.jfif" alt="">
+                    <h1 class="card-title">Lasagna tradicional con Jamon y Queso</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+
+
+
+
+
+        <section class="semana container-xl" id="semana-4" style="display: none;">
+
+            <section class="container-xl mt-2">
+                <div class="d-flex flex-row">        
+                    <div>            
+                        <span class="fs-3 me-auto m-2">Menu Especial</span>
+                    </div>
+                    <div class="w-75">               
+                        <hr class="p-1 m-3 border-1">                       
+                    </div>
+                </div>                
+            </section>
+
+
+            <div class="row">
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/milanesa.jpeg" alt="">
+                    <h1 class="card-title">Milanesa de pollo o carne sola o a la pizza</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/carne-horno.jpeg" alt="">
+                    <h1 class="card-title">Carne al horno</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+                <div class="col-md-4 card">
+                    <img class="card-img mx-auto" src="img/arroz-pollo.jpeg" alt="">
+                    <h1 class="card-title">Arroz con pollo</h1>            
+                    <div class="card-body">                     
+                     <a href="#" class="btn btn-primary d-block" data-bs-toggle="modal" data-bs-target="#modalJuego"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+                   </div>
+                </div>
+            </div>
+
+
+
+        </section>
+
+
+    </section>
+    
+
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
