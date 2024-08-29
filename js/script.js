@@ -5,6 +5,10 @@ botonesSemana.forEach(boton => {
   boton.addEventListener('click', (event) => {
     event.preventDefault(); // Evita el comportamiento por defecto del enlace (si es un enlace)
 
+    // Oculta todos los menús
+    menusSemanas.forEach(semana => {
+		semana.style.display = 'none';
+	});
 
     // Obtiene el ID de la semana seleccionada
     const idSemana = event.target.dataset.semana;
