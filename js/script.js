@@ -47,8 +47,15 @@ const countProducts = document.querySelector('#contador-productos');
 const cartEmpty = document.querySelector('.cart-empty');
 const cartTotal = document.querySelector('.cart-total');
 
+var contadorComida=0;
+
+//e representa el evento que se dispara cuando hacemos click sobre porductsList
 productsList.addEventListener('click', e => {
+
+	//e.target: Representa el elemento HTML exacto en el que se hizo clic. Es decir, es el origen del evento.
+	//classList.contains('btn-add-cart') Verifica si el elemento en el que se hizo clic (e.target) contiene la clase CSS llamada btn-add-cart
 	if (e.target.classList.contains('btn-add-cart')) {
+		//parentElement: Este método obtiene el elemento padre inmediato del e.target que vendria a ser el div con la clase (col-md-3  card)
 		const product = e.target.parentElement;
 
 		const infoProduct = {
@@ -57,12 +64,21 @@ productsList.addEventListener('click', e => {
 			price: product.querySelector('p').textContent,
 		};
 
-		const exits = allProducts.some(
-			product => product.title === infoProduct.title
-		);
+		contadorComida++;
 
-		if (exits) {
-			const products = allProducts.map(product => {
+		//Si hay mas de dos platos de comida se cancela la funcion
+		if(contadorComida>2) {
+			return;
+		}
+
+		// .some(): Es un método de los arrays en JavaScript que recorre todos los elementos del array y verifica si al menos uno de ellos cumple con una condición. Retorna true si encuentra un elemento que cumpla la condición, y false si no encuentra ninguno.
+		const existe = allProducts.some(function(product) {
+			return product.title === infoProduct.title;
+		});
+
+		if (existe) {
+			// .map() crea un nuevo array products basado en el array original allProducts. La función que se pasa a .map() se ejecuta para cada elemento en allProducts
+			const products = allProducts.map(function(product) {
 				if (product.title === infoProduct.title) {
 					product.quantity++;
 					return product;
@@ -72,12 +88,14 @@ productsList.addEventListener('click', e => {
 			});
 			allProducts = [...products];
 		} else {
+
+			// allProducts = [...allProducts, infoProduct]: Utiliza el operador de propagación (...) para crear un nuevo array que incluye todos los elementos del array original allProducts más el nuevo infoProduct. Esto añade el nuevo producto al final del array.
 			allProducts = [...allProducts, infoProduct];
 		}
-
+		
+		// showHTML(): Se llama a esta función para actualizar la interfaz de usuario con los cambios en el array allProducts
 		showHTML();
-	}
-});
+}});
 
 rowProduct.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {
