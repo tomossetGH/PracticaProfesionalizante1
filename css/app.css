@@ -7,6 +7,32 @@ body {
     font-weight: 400;
 }
 
+.icono {
+    margin-left: 10px;
+}
+
+.iconos {
+    margin: auto;
+}
+
+header {
+    background-color: #0571ecb4;
+    padding: 5px;
+}
+
+.navegacion {
+    background-color: #3576c0b4;
+}
+
+.titulo-comidas {
+    margin: auto;
+    padding-top: 10px;
+}
+
+.fondo {
+    background-color: #68adca41;
+}
+
 .card{
     color: white ;
     background-color: #80BFFF;
