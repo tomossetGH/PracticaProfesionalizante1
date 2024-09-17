@@ -1,26 +1,18 @@
-const botonesSemana = document.querySelectorAll('.boton--semana');
-const menusSemanas = document.querySelectorAll('.semana');
-
-botonesSemana.forEach(boton => {
-  boton.addEventListener('click', (event) => {
-    event.preventDefault(); // Evita el comportamiento por defecto del enlace (si es un enlace)
-
+function showMenuForWeek(weekNumber) {
     // Oculta todos los menús
-    menusSemanas.forEach(semana => {
-		semana.style.display = 'none';
-	});
+    document.querySelectorAll('.semana').forEach(menu => {
+        menu.style.display = 'none';
+    });
 
-    // Obtiene el ID de la semana seleccionada
-    const idSemana = event.target.dataset.semana;
+    // Muestra el menú de la semana correspondiente
+    const menu = document.getElementById(`semana-${weekNumber}`);
+    if (menu) {
+        menu.style.display = 'block';
 
-    // Obtiene la sección de la semana seleccionada y la muestra
-    const semanaSeleccionada = document.getElementById(idSemana);
-    semanaSeleccionada.style.display = 'block';
-
-    // Desplaza suavemente a la sección seleccionada
-    semanaSeleccionada.scrollIntoView({ behavior: 'smooth' });
-  });
-});
+        // Desplaza suavemente al menú seleccionado
+        menu.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 const shoppingCartIcon = document.querySelector('.carrito');
 const productListContainer = document.querySelector('.listaCarrito');
