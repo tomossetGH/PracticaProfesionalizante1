@@ -33,6 +33,30 @@ header {
     background-color: #68adca41;
 }
 
+.titulo-empanadas {
+    color: #4396e9;
+}
+
+.titulo-tartas {
+    color: #8b51e9;
+}
+
+.titulo-ensaladas { 
+    color: #47b84d;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.flex-item {
+    height: 300px;
+    width: 300px;
+}
+
 .card{
     color: white ;
     background-color: #80BFFF;
@@ -44,6 +68,15 @@ header {
     border-radius: 8px;
     box-shadow: 10px 5px 50px white;
 }
+
+.tarta {
+    background-color: #8b51e9;
+}
+
+.ensalada {
+    background-color: #47b84da4;
+}
+
 .count-products{
     position: absolute;
     top: 50%;
@@ -144,6 +177,10 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 100px;
+}
+
+.imagen-mal {
+    height: 133.61px;
 }
 
 .card-title {
