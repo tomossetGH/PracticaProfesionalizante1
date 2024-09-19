@@ -45,6 +45,10 @@ header {
     color: #47b84d;
 }
 
+.titulo-especial {
+    color: #9c3e3e;
+}
+
 .flexbox {
     display: flex;
     flex-flow: row wrap;
@@ -68,6 +72,7 @@ header {
     border-radius: 8px;
     box-shadow: 10px 5px 50px white;
 }
+
 
 .tarta {
     background-color: #8b51e9;
@@ -185,6 +190,22 @@ header {
 
 .card-title {
     font-size: 32px;
+}
+
+.card-title-especial {
+    font-size: 20px;
+}
+
+.card-title-especial-xs {
+    font-size: 16px;
+}
+
+.card-title-especial-s {
+    font-size: 18px;
+}
+
+.semana {
+    background-color: #9c3e3e;
 }
 
 

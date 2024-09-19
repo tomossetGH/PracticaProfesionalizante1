@@ -1,16 +1,21 @@
+document.addEventListener('DOMContentLoaded', showMenuForWeek());
+
 function showMenuForWeek(weekNumber) {
     // Oculta todos los menús
     document.querySelectorAll('.semana').forEach(menu => {
         menu.style.display = 'none';
     });
 
-    // Muestra el menú de la semana correspondiente
-    const menu = document.getElementById(`semana-${weekNumber}`);
-    if (menu) {
-        menu.style.display = 'block';
+    // Selecciona todos los menús de la semana correspondiente usando la clase
+    const menus = document.querySelectorAll(`.semana-${weekNumber}`);
+    
+    if (menus.length > 0) {
+        menus.forEach(menu => {
+            menu.style.display = 'block'; // Muestra cada uno de los menús
+        });
 
-        // Desplaza suavemente al menú seleccionado
-        menu.scrollIntoView({ behavior: 'smooth' });
+        // Desplaza suavemente al primer menú de la lista
+        menus[0].scrollIntoView({ behavior: 'smooth' });
     }
 }
 
