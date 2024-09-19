@@ -1,5 +1,5 @@
 1-Hacer la vista de los vendedores.
-2-Poner como maximo 2 empanadas en total.
-3-Agregar un calendario para seleccionar dia y semana.
+2-Poner como maximo 2 empanadas en total mas la ensalada y 1 tarta + la ensalada
+3-Arreglar el 0 al costado
 
 Agregar su nombre al lado de la tarea para indicar que estan trabajando en eso. Una vez finalizada la tarea borrarla.
