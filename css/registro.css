@@ -1,9 +1,9 @@
 .contenedor {
     max-width: 500px;
     padding: 20px;
-    background-color: #0571ec56;
+    background-color: #b6cce656;
 }
 
 .fondo {
-    background-color: #afcad6;
+    background: linear-gradient(to left, #afcad6, #1d59b4);
 }

@@ -1,0 +1,13 @@
+.contenedor {
+    background-color: #b6cce656;
+    margin: auto;
+    text-align: center;
+    margin-top: 80px;
+    width: 600px;
+    padding: 40px 0;
+    border-radius: 10px;
+}
+
+body {
+    background: linear-gradient(to left, #afcad6, #1d59b4);
+}

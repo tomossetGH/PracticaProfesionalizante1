@@ -6,7 +6,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #afcad6;
+    background: linear-gradient(to left, #afcad6, #1d59b4);
     padding: 20px;
 }
 
@@ -17,7 +17,7 @@ body {
 
 h1, h2 {
     text-align: center;
-    color: #333;
+    color: #000000;
 }
 
 h1 {
@@ -25,7 +25,7 @@ h1 {
 }
 
 form {
-    background-color: #0571ec56;
+    background-color: #b6cce656;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);

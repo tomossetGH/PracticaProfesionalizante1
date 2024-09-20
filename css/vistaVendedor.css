@@ -1,0 +1,79 @@
+body {
+    background: linear-gradient(to left, #afcad6, #1d59b4);
+}
+
+h1 {
+    text-align: center;
+}
+
+.flexbox {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 40px;
+    justify-content: center;
+}
+
+.flex-item {
+    height: 300px;
+    width: 300px;
+}
+
+.card{
+    color: white ;
+    background-color: #80BFFF;
+    text-align: center;
+    margin:6px;
+    margin-top:5px;
+    padding: 20px 10px;
+    box-shadow: 0px, 0px, 25px, #0007;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
+}
+
+.tarta {
+    background-color: #8b51e9;
+}
+
+.ensalada {
+    background-color: #47b84da4;
+}
+
+.semana {
+    background-color: #9c3e3e;
+}
+
+.card-img {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 100px;
+}
+
+.btn {
+    background-color: #0d6efd; 
+    color: white; 
+    border: none;
+    padding: 15px 30px; 
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 50px; 
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); 
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0055d4;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3); 
+    transform: translateY(-5px);
+}
+
+p {
+    margin-top: -15px;
+}
+
+h2 {
+    font-size: 1.3em;
+}

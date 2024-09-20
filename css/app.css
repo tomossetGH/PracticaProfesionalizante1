@@ -44,11 +44,12 @@ header {
 }
 
 .fondo {
-    background-color: #68adca41;
+    background: linear-gradient(to left, #afcad6, #1d59b4);
 }
 
 .titulo-empanadas {
     color: #4396e9;
+    text-shadow: 0 0 3px #000000;
 }
 
 .titulo-tartas {
@@ -57,6 +58,7 @@ header {
 
 .titulo-ensaladas { 
     color: #47b84d;
+    text-shadow: 0 0 3px #0000009f;
 }
 
 .titulo-especial {
@@ -84,7 +86,7 @@ header {
     padding: 20px 10px;
     box-shadow: 0px, 0px, 25px, #0007;
     border-radius: 8px;
-    box-shadow: 10px 5px 50px white;
+    box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
 }
 
 
