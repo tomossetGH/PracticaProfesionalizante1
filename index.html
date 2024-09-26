@@ -33,48 +33,34 @@
         </div>      
     </header>
 
-    <nav class="navbar navbar-expand-lg navbar-light navegacion">
-
-        <div class="collapse navbar-collapse" id="menu">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link fs-5" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Calendario</a>
-                </li>
-
-                <li class="nav-item">
-                    <a href="#" class="nav-link fs-5">Contactanos</a>
-                </li>
-                <li class="nav-item">
-                    <a href="perfilDeUsuario.html" class="nav-link fs-5">Mi Perfil</a>
-                </li>
-                <li class="nav-item me-4 conteiner-carrito carrito">
-                    <a href="#" class="nav-link fs-5">
-                        <i class='bx bx-shopping-bag'></i>
-                    </a>
-                    <div class="count-products">
-						<span id="contador-productos">0</span>
-					</div>
-                    <div class="container-cart-products listaCarrito hidden-cart">
-                        <div class="row-product hidden">
-                            <div class="cart-product">
-                                <div class="info-cart-product">
-                                    <span class="cantidad-producto-carrito">1</span>
-                                    <p class="titulo-producto-carrito">Empanada de Pollo</p>
-                                    <span class="precio-producto-carrito">$80</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="container-fluid cart-total hidden">
-                            <h3>Total:</h3>
-                            <span class="total-pagar">$200</span>
-                        </div>
-                        <p class="cart-empty">El carrito está vacío</p>
-                    </div>
-                 </li>
-             </ul>
-           </div>
+    </nav>
+        <div class="navegacion">
+            <a class="nav-link fs-5" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Calendario</a>
+            <a href="#" class="nav-link fs-5">Contactanos</a>
+            <a href="perfilDeUsuario.html" class="nav-link fs-5">Mi Perfil</a>
+            <a href="#" class="nav-link fs-5 conteiner-carrito carrito">
+                <i class='bx bx-shopping-bag'></i>
+                <span class="count-products" id="contador-productos">0</span>
+            </a>
         </div>
 
+        <div class="container-cart-products listaCarrito hidden-cart">
+            <div class="row-product hidden">
+                <div class="cart-product">
+                    <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Empanada de Pollo</p>
+                        <span class="precio-producto-carrito">$80</span>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid cart-total hidden">
+                <h3>Total:</h3>
+                <span class="total-pagar">$200</span>
+            </div>
+            <p class="cart-empty">El carrito está vacío</p>
+        </div>
+    <nav>
 
     </nav>
 

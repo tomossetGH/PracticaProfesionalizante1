@@ -12,6 +12,7 @@ body {
 }
 
 .iconos {
+    width: 120px;
     margin: auto;
 }
 
@@ -25,13 +26,22 @@ header {
     justify-content: center;
 }
 
-.encabezado-texto {
-    margin-left: 22.2vw;
+.encabezado-texto  {
+    width: 50%;
     margin-top: 7px;
+    margin: auto;
+    text-align: center;
 }
 
 .navegacion {
     background-color: #3576c0b4;
+    text-align: center;
+    height: 48px;
+}
+
+.navegacion a{
+    display: inline-block;
+    color: #000000c9;
 }
 
 .btn-inicio {
@@ -99,19 +109,14 @@ header {
 }
 
 .count-products{
-    position: absolute;
-    top: 50%;
-    right: 50px;;
-
-    background-color: #000;
-    color: #fff;
+    color: #f3f3f3;
     width: 15px;
     height: 15px;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
+    font-size: 0.8em;
+    display: inline-block;
+    position: relative;
+    top: 5px;
+    right: 15px;
 }
 
 .container-cart-products{
