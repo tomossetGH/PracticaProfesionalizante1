@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #111;
+    background: linear-gradient(to left, #afcad6, #1d59b4);
+}
+
+.icono {
+    margin-left: 10px;
+}
+
+.iconos {
+    width: 120px;
+    margin: auto;
+}
+
+
+header {
+    width: 100%;
+    padding: 5px;
+    padding-top: 10px;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn-inicio {
+    margin-left: 30px;
+}
+
+.info {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 10vh;
+    padding: 20px;
+    background-color: #b6cce656;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2em;
+}
+
+.info__usuario, .info__acciones, .info__favoritos {
+    margin-bottom: 20px;
+}
+
+.info__usuario h2, .info__acciones h2, .info__favoritos h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.info__acciones {
+    display: inline-block;
+}
+
+button {
+    background-color: #1f529e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #408cff;;
+}
+
+.info__favoritos ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.info__favoritos li {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.info__favoritos li:hover {
+    background-color: #efefef;
+}

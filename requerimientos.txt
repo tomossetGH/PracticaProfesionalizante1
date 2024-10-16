@@ -1,5 +1,4 @@
-1-Agregar historial de pedidos en perfil y repetir pedido.
-2-Poner como maximo 2 empanadas en total mas la ensalada y 1 tarta + la ensalada
-3-Arreglar si se abre calendario y no se selecciona nada la pagina se rompe.
+1-Poner como maximo 2 empanadas en total mas la ensalada y 1 tarta + la ensalada
+2-Arreglar si se abre calendario y no se selecciona nada la pagina se rompe.
 
 Agregar su nombre al lado de la tarea para indicar que estan trabajando en eso. Una vez finalizada la tarea borrarla.
