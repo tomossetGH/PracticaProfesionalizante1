@@ -11,7 +11,7 @@ function showMenuForWeek(weekNumber) {
     
     if (menus.length > 0) {
         menus.forEach(menu => {
-            menu.style.display = 'block'; // Muestra cada uno de los menús
+            menu.style.display = 'flex'; // Muestra cada uno de los menús
         });
 
         // Desplaza suavemente al primer menú de la lista
@@ -37,12 +37,9 @@ const productsList = document.querySelector('.container-items');
 // Variable de arreglos de Productos
 let allProducts = [];
 
-const valorTotal = document.querySelector('.total-pagar');
-
 const countProducts = document.querySelector('#contador-productos');
 
 const cartEmpty = document.querySelector('.cart-empty');
-const cartTotal = document.querySelector('.cart-total');
 
 var contadorComida=0;
 
@@ -50,15 +47,14 @@ var contadorComida=0;
 productsList.addEventListener('click', e => {
 
 	//e.target: Representa el elemento HTML exacto en el que se hizo clic. Es decir, es el origen del evento.
-	//classList.contains('btn-add-cart') Verifica si el elemento en el que se hizo clic (e.target) contiene la clase CSS llamada btn-add-cart
-	if (e.target.classList.contains('btn-add-cart')) {
+	//classList.contains('producto__btn') Verifica si el elemento en el que se hizo clic (e.target) contiene la clase CSS llamada producto__btn
+	if (e.target.classList.contains('producto__btn')) {
 		//parentElement: Este método obtiene el elemento padre inmediato del e.target que vendria a ser el div con la clase (col-md-3  card)
 		const product = e.target.parentElement;
 
 		const infoProduct = {
 			quantity: 1,
 			title: product.querySelector('h1').textContent,
-			price: product.querySelector('p').textContent,
 		};
 
 		contadorComida++;
@@ -96,7 +92,7 @@ productsList.addEventListener('click', e => {
 
 rowProduct.addEventListener('click', e => {
 	if (e.target.classList.contains('icon-close')) {
-		contadorComida--;
+		contadorComida=0;
 		const product = e.target.parentElement;
 		const title = product.querySelector('p').textContent;
 
@@ -115,17 +111,14 @@ const showHTML = () => {
 	if (!allProducts.length) {
 		cartEmpty.classList.remove('hidden');
 		rowProduct.classList.add('hidden');
-		cartTotal.classList.add('hidden');
 	} else {
 		cartEmpty.classList.add('hidden');
 		rowProduct.classList.remove('hidden');
-		cartTotal.classList.remove('hidden');
 	}
 
 	// Limpiar HTML
 	rowProduct.innerHTML = '';
 
-	let total = 0;
 	let totalOfProducts = 0;
 
 	allProducts.forEach(product => {
@@ -136,7 +129,6 @@ const showHTML = () => {
             <div class="info-cart-product">
                 <span class="cantidad-producto-carrito">${product.quantity}</span>
                 <p class="titulo-producto-carrito">${product.title}</p>
-                <span class="precio-producto-carrito">${product.price}</span>
             </div>
             <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -156,11 +148,8 @@ const showHTML = () => {
 
 		rowProduct.append(containerProduct);
 
-		total =
-			total + parseInt(product.quantity * product.price.slice(1));
 		totalOfProducts = totalOfProducts + product.quantity;
 	});
 
-	valorTotal.innerText = `$${total}`;
 	countProducts.innerText = totalOfProducts;
 };

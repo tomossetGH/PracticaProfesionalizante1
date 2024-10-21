@@ -19,12 +19,7 @@
         <div class="btn-registro">
             <a href="registro.html"><input type="button" class="btn btn-primary" value="Registrarse"></a>
         </div>
-
-        <div class="encabezado-texto text-light">
-            HACE TU PEDIDO SIEMPRE CON NOSOTROS
-        </div>
         
-
         <div class="text-light mt-2 me-2 fs-6 iconos">
             <i class="bi bi-facebook icono"></i>
             <i class="bi bi-instagram icono"></i>
@@ -36,7 +31,6 @@
     <nav>
         <div class="navegacion">
             <a class="nav-link fs-5" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Calendario</a>
-            <a href="#" class="nav-link fs-5">Contactanos</a>
             <a href="perfilDeUsuario.html" class="nav-link fs-5">Mi Perfil</a>
             <a href="#" class="nav-link fs-5 conteiner-carrito carrito">
                 <i class='bx bx-shopping-bag'></i>
@@ -53,10 +47,6 @@
                         <span class="precio-producto-carrito">$80</span>
                     </div>
                 </div>
-            </div>
-            <div class="container-fluid cart-total hidden">
-                <h3>Total:</h3>
-                <span class="total-pagar">$200</span>
             </div>
             <p class="cart-empty">El carrito está vacío</p>
         </div>
@@ -158,143 +148,122 @@
         </section>
     
     <!-- Tarjetas de empandas -->
-        <div class="flexbox">
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/empanadas-pollo-jugosas.jpg" alt="">
-                <h1 class="card-title">Pollo</h1> 
-                <p class="price">$80</p>           
-                <a href="#" class="btn btn-primary d-block btn-add-cart" ><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+        <div class="productos">
+            <div class="producto">
+                <img class="producto__img" src="img/empanadas-pollo-jugosas.jpg" alt="">
+                <h1 class="producto__titulo">Pollo</h1>       
+                <a href="#" class="producto__btn" ><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/Empanadas-de-jamon-y-queso.jpg" alt="">
-                <h1 class="card-title">Jamon y queso</h1>   
-                <p class="price">$80</p>                              
-                <a href="#" class="btn btn-primary d-block btn-add-cart" ><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto">
+                <img class="producto__img" src="img/Empanadas-de-jamon-y-queso.jpg" alt="">
+                <h1 class="producto__titulo">Jamon y queso</h1>                              
+                <a href="#" class="producto__btn" ><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/empanada.jpeg" alt="">
-                <h1 class="card-title">Carne</h1>      
-                <p class="price">$80</p>       
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto">
+                <img class="producto__img" src="img/empanada.jpeg" alt="">
+                <h1 class="producto__titulo">Carne</h1>            
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/Screenshot_9.png" alt="">
-                <h1 class="card-title">Cebolla y queso</h1>   
-                <p class="price">$80</p>                           
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto">
+                <img class="producto__img" src="img/Screenshot_9.png" alt="">
+                <h1 class="producto__titulo">Cebolla y queso</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/empanada-verdura.jpeg" alt="">
-                <h1 class="card-title">Verdura</h1>  
-                <p class="price">$80</p>                             
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto">
+                <img class="producto__img" src="img/empanada-verdura.jpeg" alt="">
+                <h1 class="producto__titulo">Verdura</h1>                               
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item">
-                <img class="card-img mx-auto" src="img/empanada-choclo.jpeg" alt="">
-                <h1 class="card-title">Choclo</h1>  
-                <p class="price">$80</p>                               
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto">
+                <img class="producto__img" src="img/empanada-choclo.jpeg" alt="">
+                <h1 class="producto__titulo">Choclo</h1>  
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
             <!-- Tarjetas de tartas -->
 
-            <div class="card flex-item tarta">
-                <img class="card-img mx-auto" src="img/Tarta-veggie-de-calabaza-y-queso.webp" alt="">
-                <h1 class="card-title">Calabaza</h1> 
-                <p class="price">$120</p>            
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto tarta">
+                <img class="producto__img" src="img/Tarta-veggie-de-calabaza-y-queso.webp" alt="">
+                <h1 class="producto__titulo">Calabaza</h1>          
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
 
             </div>
-            <div class="card flex-item tarta">
-                <img class="card-img mx-auto imagen-mal" src="img/tarta-verdura.jpeg" alt="">
-                <h1 class="card-title">Verdura</h1>      
-                <p class="price">$120</p>                         
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto tarta">
+                <img class="producto__img imagen-mal" src="img/tarta-verdura.jpeg" alt="">
+                <h1 class="producto__titulo">Verdura</h1>                               
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
 
             </div>
-            <div class="card flex-item tarta">
-                <img class="card-img mx-auto" src="img/tarta-jyq.jpeg" alt="">
-                <h1 class="card-title">Jamon y Queso</h1>  
-                <p class="price">$120</p>                              
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto tarta">
+                <img class="producto__img" src="img/tarta-jyq.jpeg" alt="">
+                <h1 class="producto__titulo">Jamon y Queso</h1>      
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
             <!-- Tarjetas de ensaladas -->
-            <div class="card flex-item ensalada">
-                <img class="card-img mx-auto imagen-mal" src="img/ensalada cruda.jpeg" alt="">
-                <h1 class="card-title">Ensalada cruda</h1> 
-                <p class="price">$50</p>                             
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto ensalada">
+                <img class="producto__img imagen-mal" src="img/ensalada cruda.jpeg" alt="">
+                <h1 class="producto__titulo">Ensalada cruda</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card flex-item ensalada">
-                <img class="card-img mx-auto" src="img/ensalada-cocida.jpeg" alt="">
-                <h1 class="card-title">Ensalada cocida</h1>     
-                <p class="price">$50</p>                         
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto ensalada">
+                <img class="producto__img" src="img/ensalada-cocida.jpeg" alt="">
+                <h1 class="producto__titulo">Ensalada cocida</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
-            <div class="card semana semana-1 flex-item">
-                <img class="card-img mx-auto" src="img/pollo.jpeg" alt="">
-                <h1 class="card-title-especial">Pata muslo/Carne/Cerdo</h1> 
-                <p class="price">$200</p>                                
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-1">
+                <img class="producto__img" src="img/pollo.jpeg" alt="">
+                <h1 class="producto__titulo especial">Pata muslo/Carne/Cerdo</h1>                               
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-1 flex-item">
-                <img class="card-img mx-auto" src="img/medallones.jfif" alt="">
-                <h1 class="card-title-especial">Medallones de Pollo</h1>  
-                <p class="price">$200</p>                             
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-1">
+                <img class="producto__img" src="img/medallones.jfif" alt="">
+                <h1 class="producto__titulo especial">Medallones de Pollo</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
-            <div class="card semana semana-2 flex-item">
-                <img class="card-img mx-auto" src="img/pastel-carne.jfif" alt="">
-                <h1 class="card-title-especial">Pastel de Carne y Papa</h1>      
-                <p class="price">$200</p>                          
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-2">
+                <img class="producto__img" src="img/pastel-carne.jfif" alt="">
+                <h1 class="producto__titulo especial">Pastel de Carne y Papa</h1>                                
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-2 flex-item">
-                <img class="card-img mx-auto" src="img/pollo relleno.jfif" alt="">
-                <h1 class="card-title-especial">Pollo Relleno y Papas</h1>           
-                <p class="price">$200</p>                     
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-2">
+                <img class="producto__img" src="img/pollo relleno.jfif" alt="">
+                <h1 class="producto__titulo especial">Pollo Relleno y Papas</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-2 flex-item">
-                <img class="card-img mx-auto" src="img/medallones-semana2.jfif" alt="">
-                <h1 class="card-title-especial-xs">Fideos o Ravioles con Medallones</h1>     
-                <p class="price">$200</p>                          
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-2">
+                <img class="producto__img" src="img/medallones-semana2.jfif" alt="">
+                <h1 class="producto__titulo especial">Fideos o Ravioles con Medallones</h1>                              
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
-            <div class="card semana semana-3 flex-item">
-                <img class="card-img mx-auto" src="img/sandwich.jfif" alt="">
-                <h1 class="card-title-especial-xs">Sandwich Pollo o Milanesa c/L-Tom</h1>  
-                <p class="price">$200</p>                           
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-3">
+                <img class="producto__img" src="img/sandwich.jfif" alt="">
+                <h1 class="producto__titulo especial">Sandwich Pollo o Milanesa c/L-Tom</h1>                            
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-3 flex-item">
-                <img class="card-img mx-auto" src="img/lasagna.jfif" alt="">
-                <h1 class="card-title-especial">Lasagna tradicional con JyQ</h1>    
-                <p class="price">$200</p>                             
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-3">
+                <img class="producto__img" src="img/lasagna.jfif" alt="">
+                <h1 class="producto__titulo especial">Lasagna tradicional con JyQ</h1>                               
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
 
-            <div class="card semana semana-4 flex-item">
-                <img class="card-img mx-auto imagen-mal" src="img/milanesa.jpeg" alt="">
-                <h1 class="card-title-especial-s">Milanesa Pollo/Carne sola o a la pizza</h1> 
-                <p class="price">$200</p>                        
-                <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-4">
+                <img class="producto__img imagen-mal" src="img/milanesa.jpeg" alt="">
+                <h1 class="producto__titulo especial">Milanesa Pollo/Carne sola o a la pizza</h1>                        
+                <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-4 flex-item">
-                <img class="card-img mx-auto imagen-mal" src="img/carne-horno.jpeg" alt="">
-                <h1 class="card-title">Carne al horno</h1>   
-                <p class="price">$200</p>                       
-                 <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-4">
+                <img class="producto__img imagen-mal" src="img/carne-horno.jpeg" alt="">
+                <h1 class="producto__titulo">Carne al horno</h1>                          
+                 <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
-            <div class="card semana semana-4 flex-item">
-                <img class="card-img mx-auto imagen-mal" src="img/arroz-pollo.jpeg" alt="">
-                <h1 class="card-title">Arroz con pollo</h1>     
-                <p class="price">$200</p>                  
-                 <a href="#" class="btn btn-primary d-block btn-add-cart"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
+            <div class="producto semana semana-4">
+                <img class="producto__img imagen-mal" src="img/arroz-pollo.jpeg" alt="">
+                <h1 class="producto__titulo">Arroz con pollo</h1>                       
+                 <a href="#" class="producto__btn"><i class="bi bi-cart-check-fill"></i> Añadir a mi carrito</a>
             </div>
         </div>
 

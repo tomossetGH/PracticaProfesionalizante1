@@ -26,13 +26,6 @@ header {
     justify-content: center;
 }
 
-.encabezado-texto  {
-    width: 50%;
-    margin-top: 7px;
-    margin: auto;
-    text-align: center;
-}
-
 .navegacion {
     background-color: #3576c0b4;
     text-align: center;
@@ -74,28 +67,49 @@ header {
     color: #9c3e3e;
 }
 
-.flexbox {
+.productos {
     display: flex;
     flex-flow: row wrap;
     margin-left: 40px;
     justify-content: center;
 }
 
-.flex-item {
-    height: 300px;
-    width: 300px;
-}
-
-.card{
+.producto{
     color: white ;
     background-color: #80BFFF;
     text-align: center;
     margin:6px;
     margin-top:5px;
     padding: 20px 10px;
-    box-shadow: 0px, 0px, 25px, #0007;
     border-radius: 8px;
     box-shadow: 0px 0px 4px 0px rgb(0, 0, 0);
+    height: 300px;
+    width: 300px;
+
+    display: flex;
+    flex-direction: column; /* Esto ayudará a alinear los elementos en columna */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto__btn {
+    width: 90%;
+    padding: 8px; /* Espaciado interno del botón */
+    font-size: 1em; /* Tamaño de la fuente */
+    color: white; /* Color del texto */
+    background-color: #0087e0; /* Color de fondo del botón */
+    border-radius: 5px; 
+    text-decoration: none; 
+}
+
+.producto__btn:hover {
+    background-color: #1f99eb; 
+    color: #fff;
+    transform: translateY(-2px); 
+}
+
+.producto__btn:active {
+    transform: translateY(0); /* Vuelve a la posición original al hacer clic */
 }
 
 
@@ -122,7 +136,6 @@ header {
     position: absolute;
     top: 50px;
     right: 0;
-
     background-color: #fff;
     width: 400px;
     z-index: 1;
@@ -137,9 +150,7 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 30px;
-
     border-bottom: 1px solid rgba(0, 0, 0, 0.20);
-
 }
 
 .info-cart-product{
@@ -195,7 +206,7 @@ header {
     display: none;
 }
 
-.card-img {
+.producto__img {
     background-size: cover;
     width: 150px;
     height: 150px;
@@ -205,28 +216,22 @@ header {
 }
 
 .imagen-mal {
-    height: 133.61px;
+    height: 150px;
 }
 
-.card-title {
-    font-size: 32px;
+.producto__titulo {
+    font-size: 2em;
 }
 
-.card-title-especial {
-    font-size: 20px;
-}
-
-.card-title-especial-xs {
-    font-size: 16px;
-}
-
-.card-title-especial-s {
-    font-size: 18px;
+.especial {
+    font-size: 1.6em;
 }
 
 .semana {
     background-color: #9c3e3e;
 }
+
+
 
 
 
