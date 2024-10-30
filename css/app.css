@@ -1,5 +1,4 @@
 :root {
-   
     --fuente: 'Concert One', sans-serif;
 }
 body {
@@ -55,6 +54,12 @@ header {
     margin-right: 10px;
 }
 
+.carrito--vacio {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 30px !important;
+}
+
 .btn_eliminar {
     position: absolute;
     right: 0;
@@ -65,13 +70,18 @@ header {
 }
 
 #btn--pedir {
-    width: 50%;
+    width: 80%;
     margin: auto;
+    font-size: 1rem;
 }
 
 .dias {
     margin: auto;
     margin-top: 10px;
+}
+
+.dias input {
+    margin-right: 20px;
 }
 
 #lista-carrito {
@@ -109,16 +119,15 @@ header {
 }
 
 .titulo-empanadas {
-    color: #4396e9;
-    text-shadow: 0 0 3px #000000;
+    color: #033f7a;
 }
 
 .titulo-tartas {
-    color: #8b51e9;
+    color: #6c26dd;
 }
 
 .titulo-ensaladas { 
-    color: #5ae061;
+    color: #046e0a;
 }
 
 .titulo-especial {
