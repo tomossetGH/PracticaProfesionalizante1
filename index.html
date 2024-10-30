@@ -13,32 +13,25 @@
 </head>
 <body>
     <header>
-        <div class="btn-inicio">
-            <a href="inicioDeSesion.html"><input type="button" class="btn btn-primary" value="Inciar Sesion"></a>
-        </div>
-        <div class="btn-registro">
-            <a href="registro.html"><input type="button" class="btn btn-primary" value="Registrarse"></a>
+        <div class="botones__usuario">
+            <div class="btn-inicio">
+                <a href="inicioDeSesion.html"><input type="button" class="btn btn-primary" value="Inciar Sesion"></a>
+            </div>
+            <div class="btn-registro">
+                <a href="registro.html"><input type="button" class="btn btn-primary" value="Registrarse"></a>
+            </div>
         </div>
         
-        <div class="text-light mt-2 me-2 fs-6 iconos">
-            <i class="bi bi-facebook icono"></i>
-            <i class="bi bi-instagram icono"></i>
-            <i class="bi bi-whatsapp icono"></i>
-            <i class="bi bi-tiktok icono"></i>
-        </div>      
-    </header>
-
-    <nav>
         <div class="navegacion">
-            <a class="nav-link fs-5" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Calendario</a>
-            <a href="perfilDeUsuario.html" class="nav-link fs-5">Mi Perfil</a>
-            <a href="#" class="nav-link fs-5 conteiner-carrito carrito">
+            <a class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#menuCanvas">Calendario</a>
+            <a href="perfilDeUsuario.html" class="nav-link">Mi Perfil</a>
+            <a href="#" class="nav-link" id="carrito_icono">
                 <i class='bx bx-shopping-bag'></i>
                 <span class="count-products" id="contador-productos">0</span>
             </a>
         </div>
 
-        <div class="container-cart-products listaCarrito hidden-cart">
+        <!-- <div class="container-cart-products listaCarrito hidden-cart">
             <div class="row-product hidden">
                 <div class="cart-product">
                     <div class="info-cart-product">
@@ -49,8 +42,47 @@
                 </div>
             </div>
             <p class="cart-empty">El carrito está vacío</p>
+        </div> -->
+        
+        <div class="text-light mt-2 me-2 fs-6 iconos">
+            <i class="bi bi-facebook icono"></i>
+            <i class="bi bi-instagram icono"></i>
+            <i class="bi bi-whatsapp icono"></i>
+            <i class="bi bi-tiktok icono"></i>
+        </div>      
+    </header>
+
+    <div id="carrito--productos" class="carrito--vacio" style="display: none;">
+        <span>No hay elementos en el carrito</span>
+    </div>
+
+    <div class="carrito" id="carrito--productos" style="display: none;">
+        <ul id="lista-carrito"> </ul>
+        <button class="producto__btn" id="btn--pedir">Pedir</button>
+        <div class="dias">
+            <label>
+                L
+                <input type="checkbox">
+            </label>
+            <label>
+                M
+                <input type="checkbox">
+            </label>
+            <label>
+                M
+                <input type="checkbox">
+            </label>
+            <label>
+                J
+                <input type="checkbox">
+            </label>
+            <label>
+                V
+                <input type="checkbox">
+            </label>
         </div>
-    </nav>
+    </div>
+
 
     <section>
         <div id="menuCanvas" class="offcanvas offcanvas-start bg-light">
@@ -136,16 +168,13 @@
             </div>                
         </section>
 
-        <section class="container-xl mt-4">
-            <div class="d-flex flex-row justify-content-center">        
-                <div>            
-                    <span class="fs-3 m-2 titulo-empanadas">🥟Empanadas🥟</span>
-                    <span class="fs-3 m-2 titulo-tartas">🍕Tartas🍕</span>
-                    <span class="fs-3 m-2 titulo-ensaladas">🥗Ensaladas🥗</span>
-                    <span class="fs-3 m-2 titulo-especial">🍗Especiales🍗</span>
-                </div>
-            </div>                
-        </section>
+            <div class="titulos_comidas">            
+                    <span class="titulo-empanadas">Empanadas</span>
+                    <span class="titulo-tartas">Tartas</span>
+                    <span class="titulo-ensaladas">Ensaladas</span>
+                    <span class="titulo-especial">Especiales</span>
+            </div>             
+
     
     <!-- Tarjetas de empandas -->
         <div class="productos">

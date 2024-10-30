@@ -12,38 +12,96 @@ body {
 }
 
 .iconos {
-    width: 120px;
-    margin: auto;
+    display: flex;
+    gap: 5px;
 }
 
 header {
     background-color: #0571ecb4;
-    width: 100%;
-    padding: 5px;
+    padding: 10px;
+    padding-bottom: 0;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     gap: 15px;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .navegacion {
-    background-color: #3576c0b4;
-    text-align: center;
-    height: 48px;
+    font-size: 1.4rem;
+    display: flex;
+    margin-right: 85px;
 }
 
 .navegacion a{
-    display: inline-block;
     color: #000000c9;
 }
 
-.btn-inicio {
-    margin-left: 30px;
+.botones__usuario {
+    margin-left: 10px;
+    display: flex;
+    gap: 10px;
 }
+
+#carrito--productos {
+    background-color: #fff;
+    border-radius: 10px;
+    width: 400px;
+    padding: 10px 0px;
+    position: absolute;
+    right: 0;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.btn_eliminar {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+    margin-top: -10px;
+    font-size: 2.5rem;
+    
+}
+
+#btn--pedir {
+    width: 50%;
+    margin: auto;
+}
+
+.dias {
+    margin: auto;
+    margin-top: 10px;
+}
+
+#lista-carrito {
+    list-style-type: none;
+    font-size: 1.4rem;
+}
+
+#lista-carrito li {
+    border-top: 1px solid #000000;
+    padding: 10px;
+    margin-right: 20px;
+}
+
+#lista-carrito li:first-child {
+    border-top: none
+}
+
 
 .titulo-comidas {
     margin: auto;
     padding-top: 10px;
+}
+
+.titulos_comidas {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 90px;
+    margin-top: 20px;
+    font-size: 1.8rem;
 }
 
 .fondo {
