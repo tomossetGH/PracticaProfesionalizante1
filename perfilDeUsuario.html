@@ -27,7 +27,7 @@
         </div>      
     </header>
 
-    <div class="info">
+    <div class="info" id="info">
             <div class="info__usuario">
                 <h2>Información del Usuario</h2>
                 <p>Nombre: Tobias Lucas Gianluca Emanuel Duarte</p>
@@ -37,6 +37,7 @@
             <div class="info__acciones">
                 <button id="cambiar_contraseña">Cambiar Contraseña</button>
                 <button id="repetir_orden">Repetir Pedido</button>
+                <button class="info__pedidos" id="info__mispedidos">Mis Pedidos</button>
             </div>
     
             <div class="info__favoritos">
@@ -49,6 +50,40 @@
             </div>
     </div>
 
+    <div class="mis_pedidos info" id="mis_pedidos" style="display: none;">
+        <div class="mis_pedidos__btn">
+            <img src="img/back.png" class="btn__volver" id="btn__volver">
+            <button>Semana 1</button>
+            <button>Semana 2</button>
+            <button>Semana 3</button>
+            <button>Semana 4</button>
+        </div>
+        
+        <div id="menu-semanal">
+            <div class="menu-dia" id="lunes">
+                <h4>Lunes:</h4>
+                <p id="menu-lunes">Sin menú seleccionado</p>
+            </div>
+            <div class="menu-dia" id="martes">
+                <h4>Martes:</h4>
+                <p id="menu-martes">Sin menú seleccionado</p>
+            </div>
+            <div class="menu-dia" id="miercoles">
+                <h4>Miércoles:</h4>
+                <p id="menu-miercoles">Sin menú seleccionado</p>
+            </div>
+            <div class="menu-dia" id="jueves">
+                <h4>Jueves:</h4>
+                <p id="menu-jueves">Sin menú seleccionado</p>
+            </div>
+            <div class="menu-dia" id="viernes">
+                <h4>Viernes:</h4>
+                <p id="menu-viernes">Sin menú seleccionado</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/perfilDeUsuario.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

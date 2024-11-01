@@ -86,3 +86,25 @@ button:hover {
 .info__favoritos li:hover {
     background-color: #efefef;
 }
+
+.mis_pedidos {
+    position: relative;
+}
+
+.mis_pedidos__btn {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.btn__volver {
+    width: 34px;        
+    height: auto;        
+    cursor: pointer;  
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    margin-left: 20px;
+    margin-top: 5px;
+}
