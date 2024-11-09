@@ -1,8 +1,8 @@
-package com.example.pp1carrito.controlador;
+package com.example.ApiRestPP1.controladores;
 
-import com.example.pp1carrito.modelo.Carrito;
-import com.example.pp1carrito.modelo.Producto;
-import com.example.pp1carrito.servicio.CarritoService;
+import com.example.ApiRestPP1.modelos.Carrito;
+import com.example.ApiRestPP1.modelos.Producto;
+import com.example.ApiRestPP1.servicio.CarritoService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

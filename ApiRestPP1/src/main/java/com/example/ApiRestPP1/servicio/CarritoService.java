@@ -1,8 +1,8 @@
-package com.example.pp1carrito.servicio;
+package com.example.ApiRestPP1.servicio;
 
-import com.example.pp1carrito.modelo.Carrito;
-import com.example.pp1carrito.modelo.Producto;
-import com.example.pp1carrito.repositorio.CarritoRepository;
+import com.example.ApiRestPP1.modelos.Carrito;
+import com.example.ApiRestPP1.modelos.Producto;
+import com.example.ApiRestPP1.repositorios.CarritoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

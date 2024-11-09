@@ -1,4 +1,4 @@
-package com.example.pp1carrito.modelo;
+package com.example.ApiRestPP1.modelos;
 
 import jakarta.persistence.*;
 
