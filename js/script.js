@@ -133,3 +133,53 @@ productos.forEach((producto) => {
         agregarAlCarrito(producto);
     });
 });
+
+// Obtenemos referencias a los elementos de la interfaz
+const botonPedir = document.getElementById('btn--pedir');
+
+// Función para obtener los días seleccionados
+function obtenerDiasSeleccionados() {
+    const diasSeleccionados = [];
+    const checkboxes = document.querySelectorAll('.dias input[type="checkbox"]:checked');
+    checkboxes.forEach(checkbox => diasSeleccionados.push(checkbox.value));
+    return diasSeleccionados;
+}
+
+// Función para enviar el carrito a la API
+async function guardarCarrito() {
+    const dias = obtenerDiasSeleccionados();
+    
+    const carrito = {
+        productos: Object.entries(cantidadesCarrito).map(([nombre, cantidad]) => ({
+            nombre: nombre,
+            cantidad: cantidad,
+        })),
+        totalCantidad: cantidadProductos,
+        dias: dias,
+    };
+
+    try {
+        const response = await fetch('http://localhost:8080/api/carrito/guardar', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(carrito)
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            console.log("Carrito guardado correctamente:", data);
+            alert("¡Pedido realizado con éxito!");
+
+            location.reload();
+        } else {
+            console.error("Error al guardar el carrito");
+        }
+    } catch (error) {
+        console.error("Error de red:", error);
+    }
+}
+
+// Evento para ejecutar el pedido al hacer clic en el botón "Pedir"
+botonPedir.addEventListener('click', guardarCarrito);
