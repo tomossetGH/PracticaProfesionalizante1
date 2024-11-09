@@ -22,11 +22,11 @@
             </div>
 
 
-            <form action="vistaVendedor.html" method="get">
+            <form action="vistaVendedor.html" method="post">
                 <div class="col-md-12 mt-3">
                     <label>
                         <i class='bx bx-user'></i>
-                        <input class="rounded-5" type="name" placeholder="Nombre">
+                        <input class="rounded-5" type="name" id="nombre" name="nombre" placeholder="Nombre">
                     </label>
                 </div>
 
@@ -48,7 +48,7 @@
                 <div class="col-md-12 mt-3">
                     <label>
                         <i class='bx bx-lock-alt' ></i>
-                        <input class="rounded-5" type="password" placeholder="Contraseña">
+                        <input class="rounded-5" type="password" id="contraseña" name="contraseña" placeholder="Contraseña">
                     </label>
                 </div>
 
@@ -129,14 +129,14 @@
                 </div>
 
                 <div class="container-l mx-auto mt-3">
-                    <input type="submit" class="btn btn-primary" value="Registrarse">
+                    <input type="submit" class="btn btn-primary" id="btnRegistrar" value="Registrarse">
                 </div>
             </form>
         </div>
 
 
 
-
+        <script src="js/registro.js"></script>
        
 
 

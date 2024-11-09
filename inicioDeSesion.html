@@ -21,32 +21,25 @@
             </div>
 
 
-            <form action="index.html" method="get">
+            <form id="loginForm">
                 <div class="mt-2">
                     <label>
                         <i class='bx bx-user'></i>
-                        <input class="rounded-5" type="email" placeholder="Usuario o e-mail">
+                        <input class="rounded-5" type="text" id="nombre" placeholder="Usuario">
                     </label>
                 </div>
-                
-
                 <div class="mt-2">
                     <label>
                         <i class='bx bx-lock-alt'></i>
-                        <input class="rounded-5" type="password" placeholder="Contraseña">
+                        <input class="rounded-5" type="password" id="contraseña" placeholder="Contraseña">
                     </label>
                 </div>
-
-
-
-                <div class="mt-2">
-                    <a href="#">He olvidado mi Contraseña</a>
-                </div>
-
                 <div class="container-l mx-auto mt-3">
-                    <input type="submit" class="btn btn-primary" value="Inciar Sesion">
+                    <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
                 </div>
             </form>
+
+            <script src="js/inicioDeSesion.js"></script>
     </div>
 
 
